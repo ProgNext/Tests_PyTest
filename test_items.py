@@ -7,6 +7,6 @@ def test_check_exists_button_add_in_card(browser, request):
     browser.get(link)
     time.sleep(10)
     try:
-        button = browser.find_element(By.CLASS_NAME, "btn-add-to-baskett")
+        button = browser.find_element(By.CLASS_NAME, "btn-add-to-basket")
     except:
         assert False, "Error, button 'Add in card' is not exists!!!"
